@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `alpacanox-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `alpacanox-blog`,
+        name: `AlpacaNox Blog`,
+        short_name: `AlpacaNox Blog`,
         description: `Personal blog`,
         start_url: `/`,
         background_color: `#fff`,

@@ -1,0 +1,208 @@
+---
+title: Might & Magic VII Glitches
+slug: "/guides/mm7/glitches"
+---
+
+## Map corruption
+
+[Example](https://www.youtube.com/watch?v=z_WPIi7zwVc) - *Quick showcase of what can be done with the glitch*
+
+The game has an autosave feature in case it crashes. Most of the times it will work just fine unless the game crashes in the main menu. That writes a corrupted map in the autosave slot.
+
+### The most basic way to do it
+
+1. Get any spell scroll that opens inventory on use (Fire aura, Enchant item, Vampiric Weapon).
+2. Pick it up from the inventory
+3. While holding it open the Save Game menu
+4. Use the scroll on any character
+5. Quit to Main Menu
+6. Repeatedly press Load Game then Cancel couple times until the game crashes and then confirm autosave.
+7. Load the autosave
+
+*Sometimes clicking on the ok button when autosaving might not work, but pressing Space will do.*
+
+### What changes on the corrupted map
+
+* All NPCs including monsters disappear. Pick-ups disappear as well, although the mini-map indicates as if there is something on the ground with white dots. (supposedly data from the previously loaded map)
+* Map starts using chest data from the previously loaded one, it updates the chests every time the map is loaded which allows to dupe items really fast.
+* Surfaces change their properties. For example: some textures start to scroll, some warp, some disappear and such.
+
+*Map corruption only worked so far with outdoor maps. Exceptions: Harmondale, Land of the Giants.*
+*Corrupted surfaces seem to be clickable only in Software mode*
+
+#### Chest data
+
+Areas sometimes have chests that are not accessible until some event takes place. For example the wetsuit chests in Castle Lambert. These are replaced with different ones until the final task. Even though there is no way to open those until they are replaced, the chests still exist and are in the same list as any other chest. Supposedly if there was more chests on the map, one of them would have the items from those, which are hidden.
+
+That mechanic can be used to access the chests earlier than intended.
+
+To do that:
+1. Corrupt the map that has more chests that the one with hidden ones. In case with wetsuits Erathia will do.
+2. Load a save or visit the map you want to open the chest from (Castle Lambert).
+3. Load the save with a corrupted map.
+4. Find the chest that corresponds to the one you want to unlock and open it.
+
+*The items can be duplicated multiple times by just reloading both maps repeatedly and getting the items from the chest*
+*You can place your own items in the chest and get them duplicated as well*
+
+#### Another example with getting items from Emerald Island
+
+[Example](https://www.youtube.com/watch?v=P7kAw7SCHyA)
+
+#### The Hidden Tomb early
+
+[Example](https://www.youtube.com/watch?v=WXy6w9bMz5U)
+
+Since map corruption alters surfaces on the map some of the objects stop being solid or can be clicked through. In case of The Hidden Tomb, on the normal map, there is a chunk of geometry blocking the entrance until the quest is started, however if Erathia is corrupted the entrance becomes partially visible which allows to use it / interact. 
+
+*For some reason using Space instead of clicking seems more reliable.*
+
+### Indoor map corruption
+
+[Example](https://www.youtube.com/watch?v=cQBLlnUzono)
+
+Areas of indoor maps can be affected as well. 
+
+How-to:
+
+1. Load the game in hardware mode
+2. Load some outdoor map (start a new game for example)
+3. Load a save indoors
+4. Use 3 fire aura (enchant item works too) scrolls in save game menu
+5. Quit to main menu and press load game and cancel couple times until it crashes
+6. Confirm autosave
+7. Load the autosave
+
+So far:
+* worked without crashing only at Castle Gloaming (specific area near the throne room)
+* only hardware mode did not crash
+* similarly to outdoor map corruption surfaces become not interactable / usable in hardware mode. 
+* sometimes or in some places it is possible to open menu (esc) or rest without crashing the game, the more party rests the faster the surfaces will move
+* escaping with town portal or death and then entering again will revert the map back to normal
+* saving and loading works even though the game crashes afterwards
+* software mode can render the first frame without crashing if right mouse button is held during loading (releasing the button or clicking crashes the game)
+* some surfaces seem to kill the party instantly
+
+## Exchanging followers
+[Example](https://www.youtube.com/watch?v=wr8F1mp0UAs)
+
+Here's one of the ways to make that happen:
+[Example](https://www.youtube.com/watch?v=f3jW5TX3B4o)
+
+The game highlights the NPC but there is no way to hire them since moving cursor away resets back to default (0) follower William Darvees.
+At first the game counts the new NPCs you get as basic followers. They will display "invalid string" when interacted with. 
+Right now it seems it is only possible to get William Darvees and couple others.
+William works as a first follower every time, he will appear if you've got no followers. Why? No idea, his id in Npcdata is 11. If you've got 1 follower you will get Rebecca Devine who's id is 46. Clearly it is not tied to the character id.
+
+Numbers:
+
+String IDs from Global.txt:
+- Hire = 406
+- Dismiss = 408
+
+NPCs I've managed to get:
+
+- 11 William Darvees 
+- 46 Rebecca Devine
+- 48 Thomas Grey
+- 54 Alice Hargreaves
+- 52 Faerie King
+- 47 Daedalus Falk
+- 38 Barholomew Hume
+- 53 The Oldest Tree
+
+More or less in that order
+
+To get them I needed:
+- 56 Golem
+- 60 - 66 Keldin Dwarves
+- 17 Sir Charles Quixote
+
+### Turning glitched followers into quest NPCs
+
+#### 1. Switching focus from non-hireable npc
+
+[Example](https://www.youtube.com/watch?v=xtXKpZKflqU)
+
+Basically this works because for some reason right clicking on the followers portrait, even if it is not visible gives it focus.
+That is not persistent and the npc will get back to displaying "invalid string" afterwards.
+
+#### 2. Sacrifice spell. 
+
+[Example](https://www.youtube.com/watch?v=J4r3xoePLJk)
+
+Seems like it allows to sacrifice that kind of NPCs infinitely, casting it once will turn them into a quest npc freeing room for the other followers. 
+
+#### 3. Dying (party).
+It is well known that dying removes followers. But since these guys are not ordinary even though the game thinks they are at first, they will not be removed but turned into normal, interactable versions (quest NPCs).
+
+## Extra
+
+After glitching the game with enchant scroll the top part of the party buffs retains the dialogue function (in that case "hire/dismiss"):
+
+[Example](https://www.youtube.com/watch?v=dtgunv1lMsM)
+
+* William Darvees is not the only one follower that can be acquired by manipulating followers. It all depends on how many followers you've got. Then depending on the position you started dismissing them from left to right you will get a new follower in the end. Nothing special as for now, mostly promotion NPCs
+
+* Fire aura spell which is much more easier to get can be used instead of enchant item. (or probably any other spell which involves using inventory).
+
+## 5-th slot
+
+5th slot can be accessed when all characters in the party are inactive (recovering). The 5th character in VII is a copy of the first slot. The ability to swap is not intended to be accessed during a casual play-through, however it seems to be possible, yet unknown how to as for now.
+
+### Inventory
+One of the ways to at least see and influence the 5th slot inventory is by using scrolls. Any spell that opens inventory can do that (fire aura, enchant item, vampiric weapon and such).
+
+[Example](https://www.youtube.com/watch?v=-EDC2PDfgzk)
+
+Not only we get to see the inventory that way, but it also seems like using "Enchant Item" overlaps some data, yet unknown what it is exactly. The only visible effect of it is Immolation buff.
+*The immolation buff doesn't do any damage, at least with the stock character.*
+
+### Using objects multiple times
+If all characters are recovering the 5th slot takes the turn and is able to interact with things, that sometimes breaks the logic of certain events, such as shrines for example:
+
+[Example](https://www.youtube.com/watch?v=pCESWXdGRqU)
+
+## FMV traveling
+
+### Stables and boats
+
+[Example](https://www.youtube.com/watch?v=KFOModpxxSg)
+
+Breaking cutscenes like that will prevent position of a party from updating after traveling. The map changes but position does not. So for example if you were to travel from stables at Harmondale to Tularean Forest you will travel there but will be standing in the same spot on the map where the stables at Harmondale are at.
+
+### How-to
+
+1. After clicking on the destination click on any character portrait while the game is loading next area.
+2. Open and close the spell book
+3. Save the game
+
+Now you've got a save with displaced position, however the cutscene is still over the screen. To get rid of it either restart the game or load any save in front of any entrance (house / dungeon, something which uses fmvs) and click / press space. That way of getting rid of the cutscene is much easier to do in hardware mode.
+
+### Map crossing
+
+[Example](https://www.youtube.com/watch?v=zMejkd8D-PQ)
+
+After breaking a cutscene it can be used further to do more stuff, like map crossing to the opposite edge, for example. It saves the position where crossing was initiated and keeps it after traveling so you end up in the same place but on the other map.
+
+1. Make a save in front of map edge.
+2. Break a cutscene with a boat or stables.
+3. Load previously made save and cross the edge.
+
+## Revealing followers at Shoals
+
+[Example](https://www.youtube.com/watch?v=HbpbrEWDB2s)
+
+After entering Shoals it is not allowed to interact with followers, however there is a simple solution.
+
+*It works strangely, if you were to exit or load an outdoor map it is not usually reverting everything back to normal. Even though there are no followers displayed hiring new ones is not allowed if you've got already 2, which confirms that they just become hidden and not displaced or removed on entrance.*
+
+It works by loading any indoor map and then loading the save at Shoals back.
+
+## Using scrolls in Controls
+
+Using any scroll that opens inventory while in Controls menu (which is the menu with sound and graphics options) can lead to some interesting effects if the game is running in Software mode.
+
+## Missing enemies on Arena
+
+[Example](https://www.youtube.com/watch?v=D50kr45ouwQ)
