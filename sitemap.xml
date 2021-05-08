@@ -18,7 +18,6 @@
 <url> <loc>https://minimal-blog.lekoarts.de/guides/anachronox/glitches-add</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/anachronox/lists</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/anachronox/mystech-extra-options-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/guides/mm6/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/mm7/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/routes/anachronox/any</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/routes/anachronox/any-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -29,5 +28,6 @@
 <url> <loc>https://minimal-blog.lekoarts.de/routes/mm8/any</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/routes/mm8/any-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/routes/anachronox/any-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/guides/mm6/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/tags/news</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
