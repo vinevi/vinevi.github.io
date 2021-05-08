@@ -6,7 +6,8 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+	siteTitle: `AlpacaNox`,
+    siteTitleAlt: `AlpacaNox`,
   },
   plugins: [
     {
@@ -22,32 +23,32 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
+		  { title: `Projects`,
+			slug: `/projects`
+		  },
+		  { title: `Runs`,
+			slug: `/runs`
+		  }
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `YouTube`,
+            url: `https://www.youtube.com/channel/UC0sP-02IzeacQ4UERBO_xpA`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Discord`,
+            url: `https://discordapp.com/users/Alpaca#3603`,
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `alpacanox-blog - @lekoarts/gatsby-theme-minimal-blog`,
+        short_name: `alpacanox-blog`,
+        description: `Personal blog`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
@@ -67,8 +68,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-netlify`,
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {

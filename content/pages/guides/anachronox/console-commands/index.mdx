@@ -1,0 +1,104 @@
+---
+title: Console Commands
+slug: "/guides/anachronox/console-commands"
+---
+
+## **Common**
+
+### Key combinations
+
+ALT+SHIFT+F10 to enable console, ~ to open
+CTRL+SHIFT+F10 to quit the game anytime (or F10 + ENTER)
+
+### Movement
+
+exec q2 — Quake-style spectator camera preset (noclip, allows to fly around)
+exec anox — default third-person controls preset (reverts things back to normal)
+noclip — walk through walls
+
+### Environment
+
+gl_drawflat 1 — shows BSP geometry, the actual structure of the map, revealing invisible walls and such
+r_fullbright 1 — disables lighting
+
+### Misc
+
+battlewin — win a battle instantly
+quit — exit the game (useful if ui breaks)
+exec testjosh — AI debug (switch between the AI view-modes by pressing F1-F4. From 0 to 3, 3 - shows everything.)
+modellist — to track what models / actors are loaded on the level
+cmdlist — list commands
+
+## Debug
+
+invoke 1:86 — shows the menu which allows to edit your party (add items, level up and etc)
+invoke 1:860 — old debug menu
+
+## Maps
+
+**List all maps:**
+cd maps
+dir
+
+**Minigames**
+Hive mission:
+map hivebay
+invoke 67:3096
+
+~~~
+
+map "mapname" — warps you to the selected map (no brackets required)
+
+~~~
+
+## **Advanced**
+
+### Config presets
+***exec** runs a config with a supplied name from "anoxdata/configs"*
+*example: "exec anox" runs "anoxdata/configs/anox.cfg"*
+
+
+
+
+### Invoking events
+***invoke** runs the event of the id supplied. The events can be global or local, they are stored in gamefiles of .ape extension. To find out event ids you can look through the decompiled scripts [here](https://github.com/AlpacaNox/Anachronox/tree/master/APE/Gameflow)*
+
+**Invoke** is used a lot throughout the game for UI and any sorts of in-game events.
+
+### Running cinematics
+
+For a cinematic to play properly you would need the party to be at the map it is taking place at, otherwise the cinematic will still play but the environment won't match. 
+
+Most script files already contain the map name in the name of their script file which helps to figure out where to play them. For example for the script file **fortress2_detta_intro.s** the name of the map would be **fortress2**.
+
+### Playing cinematics with the "playscene" console command
+
+To play a cinematic open the console and type in:
+**map *nameofthemap* **
+**extern "playscene *cinematicnamehere*"**
+
+for example:
+**map black**
+**extern "playscene black_intro"**
+will run the Main Menu Intro cinematic — **black_intro.s**
+
+### Playing cinematics with Planet (in-game cinematic editor)
+Playing cinematics that way will show a lot of extra things on screen, you will be able to see how the cinematics were put together. This engine module was used to make all cutscenes in the game and left for modders to use. Similarly as for the previous approach you will need to first use **map** command to load the proper environment.
+
+To play cinematic with Planet:
+open the console and type in:
+**map *nameofthemap* **
+**planet**
+This will run Planet. To be able to click on the buttons press the **TAB** key.
+* Click on the **File** button
+* Type in the name of the script you would like to play
+* Click on the **Load** button
+* Press **F5** to start playing the cinematic and **F8** to stop
+
+### List of the script files
+
+*amb / ambi scripts are usually little scripts used to control environment on the maps, these are not really cinematics and are used for animating little scenes to play on a background*
+
+*some cinematics are so huge that they were split on several script files and then chained together in-game*
+
+**[A table with scripts from the game](https://docs.google.com/spreadsheets/d/1KpVUunUhmbGUBiiijQQint6EEliXdiuI3FemJm7Po3E/edit?usp=sharing) (Google Sheets)**

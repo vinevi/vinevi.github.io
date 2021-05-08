@@ -1,0 +1,66 @@
+---
+title: Battle Keyboard Controls
+slug: "/guides/anachronox/battle-keyboard-controls"
+---
+
+The game allows to control the party during battles using a keyboard. This is an undocumented feature. 
+Controls:
+
+Number keys — select actions, party members and targets
+Tab key — switch between the party members
+Esc — cancel current action
+Enter / Space — confirm selected action
+
+Things break when trying to combine both types of controls (mouse and keyboard).
+
+Actions:
+
+## Beat Attack
+Using keyboard controls it is possible to:
+1. Target unreachable enemies (obstructed by someone or something) if using ranged weapons
+2. Attack friendly characters including the currently active character
+
+
+A simple example on how attack a party member:
+	1. Press 1 to select Beat Attack action
+	2. Hover over any party member's portrait to select them
+	3. Target any enemy using the number keys
+	4. Click on the party member's portrait
+
+## Use Item
+Same targeting options as for the previous action. The only difference is that there are items that are made for friendly characters / party members. Combining keyboard and mouse controls allows to use these items on enemies.
+
+A simple example on how use a healing item on an enemy:
+	1. Press 3 to select Use Item action
+	2. Select any healing item
+	3. Hover over any enemy portrait
+	4. Press a number key to select a party member
+	5. Click on the enemy's portrait
+
+## Mystech
+Same targeting options as for the previous actions.
+
+The option can be selected even if no mystech or shield is equipped:
+1. If no mystech is equipped the game will crash when selecting mystech power
+2. If no shield is equipped the action will not go past targeting stage (can be canceled)
+
+Using keyboard controls allows to bypass NRG requirements almost completely. Party member doesn't need to have enough NRG or shield throughput in order to use it. For this to work a shield needs to have enough throughput to cast at least the first power of mystech.
+
+When using mouse controls the game usually allows to select mystech power out of 4 options (from 1 to 4). When using keyboard controls there are up to to 10 options (0-9 number keys). The outcome depends on a currently equipped shieldcell and presence of cobalt crawlers in the combination.
+
+[Example](https://www.youtube.com/watch?v=ya4QGP8pTsM)
+
+[Tests of using different combinations](https://www.speedrun.com/anachronox/guide/5w53s)
+
+*Keyboard controls allow using mystech during the battle with Rictus.*
+
+*Targeting with keyboard allows to use mystech on dead party members. That allows to use Bane mystech on a dead character which results in reviving.*
+
+## Skill
+Same targeting options as for the previous actions.
+
+Unlike with mystech selecting a skill with keyboard without enough bouge will not allow it to be used.
+
+Many skills are hardcoded to affect specific party members. For example using FatimaScreen on some other character will still apply all effects to Boots and play animation correctly.
+
+The area of effect skills that do damage will affect every enemy regardless of selected target + selected target. So selecting ally when using a skill will only damage 1 ally character + every other enemy character.
