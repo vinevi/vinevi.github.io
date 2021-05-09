@@ -1,0 +1,92 @@
+---
+title: Might and Magic VIII glitches
+slug: "/guides/mm8/glitches"
+---
+
+## Change map data (Hardware mode)
+
+The glitch allows to change the monsters, chests and items on a map with a set of things from another.
+
+[Example](https://www.youtube.com/watch?v=ohVr4AzyThU)
+
+What it does:
+
+- Replaces all monsters and NPCs, uses positions from the map the monsters and NPCs arrived from
+- For 2D objects such as pedestals, barrels and etc the events will be transferred from the reference map, however the initial sprites of the objects will be kept. A little example will be using a barrel and receiving 2 food instead of a stat bonus.
+- The chests get replaced with the ones from the reference map. What's interesting is that if there're more chest objects on the map you transfer to then it makes it possible to access some hidden chests which replace the original ones on quest completion and such. In M&M instead of repopulating the existing chest with new items the game usually has the second chest and just swaps ids when certain condition is met.
+
+The glitch is present in VI-VIII however it has different limitations and setups for each.
+
+For VIII the easiest way to do it would be:
+
+- Run the game in hardware mode
+- Visit both maps one after another (just enter and leave so that it's loaded, for some reason the game crashes in VII without that step)
+- Use Fire Aura scroll in Controls menu on the map you want to transfer data to. The scroll can be taken from the Necromancer in the inn (he always has it right from the start)
+- Enter the reference map with Controls menu over
+- Load the autosave
+
+After that the game will crash but suggest to autosave. The new autosave will have the effects explained above.
+
+There are exceptions, certain map combinations will not work, mostly maps connected to Daggerwound Island. 
+
+## FMV travelling
+
+The following glitch allows to keep position when traveling to another map. It happens if a video background which plays inside houses or entrances gets glitched out. Possibly the game treats it as the player is still indoors and is not allowed to move.
+
+There are many ways to "break" FMV, the most easy will be to use Fire Aura scroll when in house or dungeon entrance:
+
+1. Make 1 save near a map edge
+2. Enter some house and use Fire Aura scroll
+3. Load the save from step 1
+4. Cross the map edge
+5. Save the game (After saving the game the position will update and since that puts the party at a map edge it is possible to cross right away to the next map one more time)
+6. Restarting the game or starting a New Game will get rid of the video on screen.
+
+After the video gets glitched out, it will remain on screen. Loading saves and such will not remove it which helps the setup because that way you can break it in one save and use in another, allowing to do everything with just 1 scroll.
+
+After achieving the effect you will need to somehow trigger map transition, to help that you can make a save prior near some map edge for example.
+
+If a video is in a glitched state playing any fullscreen cutscene will crash the game (such as death, intro and such).
+
+## Using not learned spells
+
+[Example](https://www.youtube.com/watch?v=Q9uDLcTpSOA)
+
+The glitch allows to get a spell of a similar tier granted the spell of tier is unlocked in some other school.
+
+Examples:
+
+- Wizard Eye -> Awakening
+- Sparks -> Ice Bolt
+- Feather Fall -> Poison Spray
+- Air Resistance -> Water Resistance
+
+1. You need to be at respawn location (Ravenshore or Daggerwound depending on the game state)
+2. The main character in the slot 1 should have a skill learned of the spell that is needed (basic level is sufficient) (1)
+3. Second character (any slot) should have a spell learned of the required tier, school doesn't matter. (2)
+4. Open the spellbook of (1) and select the required school, then press ```ESC```
+5. Step into the water where the party can drown, once the party started drowning take Fire Aura scroll and open the spellbook of (2)
+6. Click once on the spell of a similar level as the one that is needed.
+7. Once the party dies skip the cutscene. The spellbook will be still open. Click bind spell button.
+
+After dying the spellbook is of (1), not (2). Right-clicking on spells reveals what they actually are, however clicking will unset the selection. There seens to be a way to select spells after dying but it only seems to work with a few. It's also possible to switch characters but that seems to unset the selection made before dying.
+ 
+Learning skills from other characters (PC & PS2)
+
+1. Pick up Fire Aura / Enchant Item scroll on Inventory screen
+2. Switch to the Skills tab
+3. Use the scroll
+4. Press the Tab key to switch between the characters
+
+The skill leveling buttons will remain on screen allowing to level the skills of the initially selected characters for the entire party granted they have skill points to assign.
+
+That allows, for example, to give dragons magic skills.
+
+Break UI (PC & PS2)
+
+1. Make sure all characters are recovering (no one is active)
+2. Use Fire Aura / Enchant Item scroll
+3. Select any enchantable item as a target
+4. From that point there are 1-2 seconds before Enchant Item function will try to close the inventory screen. Pressing ```ESC``` key will close it earlier than intended and if it is done the Enchant Item function will try to close the inventory screen while on game screen which will not work and end up breaking UI.
+
+The delay allows to try that effect on other screens, the time is enough to enter some house / screen and such. Traveling between maps in that state seems to crash the game.

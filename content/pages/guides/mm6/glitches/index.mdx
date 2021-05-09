@@ -1,5 +1,5 @@
 ---
-title: Might and Magic 6 Glitches
+title: Might and Magic VI Glitches
 slug: "/guides/mm6/glitches"
 ---
 
@@ -28,7 +28,7 @@ slug: "/guides/mm6/glitches"
 *Requires 1 Enchant Item scroll*
 
 1. Take an Enchant Item scroll
-2. Press ESC --> Save Game
+2. Go to the Save Game screen
 3. Use Enchant Item scroll
 4. Enter dungeon / area
 5. The game will crash here, click accept
@@ -47,18 +47,18 @@ Possible results:
 [Example](https://www.youtube.com/watch?v=JrkNVn25N9s)
 
 1. Take an Enchant Item scroll
-2. Press ESC --> Save Game
+2. Go to the Save Game screen
 3. Use Enchant Item scroll
 4. Use coach to enter Arena
 5. On exit, the game will crash, but generate an autosave, outside, at Castle Ironfist.
 
-## 5-th Slot
+## 5th Slot
 
 5th slot related glitches will only work before any progression is done. Completing a big portion of quests (for example turning in scroll to Andover Potbello and such) will make the game crash when swapping characters.
 
 [Data affected by 5th slot](https://docs.google.com/spreadsheets/d/1S2NUpGPmsXoLPuPY117Ws7Vzqr3JirfJKkctUYt1mm8/edit?usp=sharing)
 
-**Swap** means CTRL+Click on a character while others recovering
+**Swap** means ```CTRL + Click``` on a character while others recovering
 
 * Restarting the game clears the blue color effect.
 * Swapping characters can lead to them receiving buffs and dying. If character is buffed it will usually lead to crashes during resting / training / map crossing and such. Dying (party) removes all the effects and allows party to travel without crashing.
@@ -67,12 +67,16 @@ Possible results:
 
 ### Small hitbox
 
+Makes the eye level 0 which significantly reduces the party's hitbox.
+
+![Small hitbox](./mm6_small_hitbox.jpg)
+
 [Example](https://www.youtube.com/watch?v=BZKSQfjaOCI)
 
 1. Start a new game
 2. Lose turn with every character and start clicking on the inactive ones
 3. You need to swap every character until the entire party is dead so that the game restarts
-4. Swap character with name "the Knight". He's usually the first one if swapping was done in sequential order.
+4. Swap character with name **the Knight**. He's usually the first one if swapping was done in sequential order.
 5. Start a new game.
 
 ### Transferring characters between saves
@@ -104,10 +108,10 @@ It seems that swapping twice anywhere updates the 5th slot character slot (the o
 
 That will bring the Knight from Free Haven into the party, however he will be debuffed and dead. There are 2 way to go about it:
 
-1. Kill the party
-Killing the party will get rid of the debuffs / buffs and resurrect the Knight allowing party to travel freely without crashing.
-2. Use master healer or temple to resurrect the Knight. However since the buffs are still on, map crossing / resting / training will crash the game. Buffed Knight is about two times stronger.  
-*After healing the Knight will have 150hp. This is much lower than what he can have. If you were to get rid of all the debuffs and update his stats, his hp will be around 100k. Using LVL well at Kriegspire updates the HP back to normal even if the Knight is buffed, resting after dying does too.*
+1. Kill the party. Killing the party will get rid of the debuffs / buffs and resurrect the Knight allowing party to travel freely without crashing.
+2. Use master healer or temple to resurrect the Knight. However since the buffs are still on, map crossing / resting / training will crash the game.  
+
+*After healing the Knight will have 150 hit points. This is much lower than what he can have. If you were to get rid of all the debuffs and update his stats, his hp will be around 100k. Using LVL well at Kriegspire updates the HP back to normal even if the Knight is buffed, resting after dying does too.*
 
 ### Saving positions in dungeons
 
@@ -123,6 +127,8 @@ The position of the party is being saved when swapping characters in indoor area
 
 *Sets monster and chest data from Dragonsand at New Sorpigal.*
 
+![Dragonsand in New Sorpigal](./mm6_dragonsand_in_new_sorpigal.jpg)
+
 Requirements:
 
 * Right now only tested to work on the first day of the game (January 1st)
@@ -132,10 +138,12 @@ Steps:
 
 1. Start the game and find 1 Enchant item scroll (make sure to do it on the first day)
 2. Travel to Dragonsand
-3. Take Enchant Item scroll, press ESC --> Save Game and use it here
-4. Start a new game
+3. Take Enchant Item scroll and go to the Save Game screen
+4. Use Enchant Item scroll
+5. Start a new game (Quick Start)
 
 If everything went correctly:
+
 * Monsters in New Sorpigal will be replaced with monsters from Dragonsand 
 * The contents of chests will be replaced as well, which allows to access Obelisk chest without doing the quest.
 
@@ -145,11 +153,10 @@ Possible results:
 
 *Currently works only with Dragonsand.*
 
-The similiar things can be achieved in 6:
-
 ### Resurrecting with Shrine of the Gods
 
 Eradicated character can be resurrected by using Shrine of the Gods repeatedly:
+
 [Example](https://www.youtube.com/watch?v=gIbNAzGpxQo)
 
 Lose turn for every character and then repeatedly press space.
@@ -162,7 +169,7 @@ Lose turn for every character and then repeatedly press space.
 
 In VI there is no "0" follower. So to get the hover bug to happen you need 2 NPCs instead of 1 otherwise the game crashes.
 
-Right clicking on the portraits of the followers gives them focus, even when the portrait is not visible it still gets the input.
+Right-clicking on the portraits of the followers gives them focus, even when the portrait is not visible it still gets the input.
 
 ### Duplicating followers
 
@@ -178,12 +185,13 @@ After duplicating the game treats new followers as normal, even if the original 
 
 [Example](https://www.youtube.com/watch?v=_bsuRdky0AI)
 
-#### - Swapping followers (no way to do it yet)
+#### Swapping followers (no way to do it yet)
 
 In VII there is a way to get new followers by dismissing the existing ones, you will be getting -2 to follower id you dismissed last.
+
 Right now dismissing quest followers in VI crashes the game.
-That is why the only new follower it is possible to get is a follower made of 2 normal ones (not of quest type):
-99 Helen Teal
+
+That is why the only new follower it is possible to get is a follower made of 2 normal ones (not of quest type): 99 Helen Teal
 
 [Example](https://www.youtube.com/watch?v=elAp4CkvAGM)
 
@@ -198,8 +206,7 @@ Why does it give us NPC with the ID 99 is yet unknown. (It is 11 in VII)
 *Make sure the game has no progress of any kind (quests, guilds)*
 
 1. Go to the wall that warps to Dragonsand at New Sorpigal.
-2. Swap the 4th slot twice (ctrl+click when no one has a turn)
-*Sometimes the image won't update so you'd need to move a little.*
+2. Swap the 4th slot twice (ctrl+click when no one has a turn). Sometimes the image won't update so you'd need to move a little.
 3. Swap again once
 4. Click on the wall and exit the game right after
 5. Load the autosave first then save made in the first step (any other save will probably work too)

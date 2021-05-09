@@ -28,6 +28,10 @@ module.exports = {
 		  },
 		  { title: `Runs`,
 			slug: `/runs`
+		  },
+		  {
+			title: `Guides`,
+			slug: `/guides`
 		  }
         ],
         externalLinks: [

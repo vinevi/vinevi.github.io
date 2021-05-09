@@ -74,6 +74,7 @@ How-to:
 7. Load the autosave
 
 So far:
+
 * worked without crashing only at Castle Gloaming (specific area near the throne room)
 * only hardware mode did not crash
 * similarly to outdoor map corruption surfaces become not interactable / usable in hardware mode. 
@@ -84,15 +85,20 @@ So far:
 * some surfaces seem to kill the party instantly
 
 ## Exchanging followers
+
 [Example](https://www.youtube.com/watch?v=wr8F1mp0UAs)
 
 Here's one of the ways to make that happen:
+
 [Example](https://www.youtube.com/watch?v=f3jW5TX3B4o)
 
 The game highlights the NPC but there is no way to hire them since moving cursor away resets back to default (0) follower William Darvees.
+
 At first the game counts the new NPCs you get as basic followers. They will display "invalid string" when interacted with. 
+
 Right now it seems it is only possible to get William Darvees and couple others.
-William works as a first follower every time, he will appear if you've got no followers. Why? No idea, his id in Npcdata is 11. If you've got 1 follower you will get Rebecca Devine who's id is 46. Clearly it is not tied to the character id.
+
+William works as a first follower every time, he will appear if you've got no followers. Why? No idea, his index in NPCData is 11. If you've got 1 follower you will get Rebecca Devine whose index is 46. Clearly it is not tied to the character's index.
 
 Numbers:
 
@@ -134,6 +140,7 @@ That is not persistent and the npc will get back to displaying "invalid string" 
 Seems like it allows to sacrifice that kind of NPCs infinitely, casting it once will turn them into a quest npc freeing room for the other followers. 
 
 #### 3. Dying (party).
+
 It is well known that dying removes followers. But since these guys are not ordinary even though the game thinks they are at first, they will not be removed but turned into normal, interactable versions (quest NPCs).
 
 ## Extra
@@ -151,14 +158,17 @@ After glitching the game with enchant scroll the top part of the party buffs ret
 5th slot can be accessed when all characters in the party are inactive (recovering). The 5th character in VII is a copy of the first slot. The ability to swap is not intended to be accessed during a casual play-through, however it seems to be possible, yet unknown how to as for now.
 
 ### Inventory
+
 One of the ways to at least see and influence the 5th slot inventory is by using scrolls. Any spell that opens inventory can do that (fire aura, enchant item, vampiric weapon and such).
 
 [Example](https://www.youtube.com/watch?v=-EDC2PDfgzk)
 
 Not only we get to see the inventory that way, but it also seems like using "Enchant Item" overlaps some data, yet unknown what it is exactly. The only visible effect of it is Immolation buff.
+
 *The immolation buff doesn't do any damage, at least with the stock character.*
 
 ### Using objects multiple times
+
 If all characters are recovering the 5th slot takes the turn and is able to interact with things, that sometimes breaks the logic of certain events, such as shrines for example:
 
 [Example](https://www.youtube.com/watch?v=pCESWXdGRqU)
