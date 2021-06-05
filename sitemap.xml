@@ -24,7 +24,6 @@
 <url> <loc>https://minimal-blog.lekoarts.de/guides/mm9/console-commands</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/mm9</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/mm9/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/projects</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/anachronox/battle-keyboard-controls</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/anachronox/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -34,5 +33,7 @@
 <url> <loc>https://minimal-blog.lekoarts.de/guides/mm6/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides/mm7/glitches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/guides</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/projects</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/projects/mm7-solo-mod-vanilla</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/tags/news</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
