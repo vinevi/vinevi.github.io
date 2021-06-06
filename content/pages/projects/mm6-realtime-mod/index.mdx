@@ -1,0 +1,41 @@
+---
+title: Might & Magic VI Realtime Mod (MMExtension)
+slug: "/projects/mm6-realtime-mod"
+---
+
+#### Description
+
+[video demo](https://youtu.be/n3TBr5DWmgo)
+
+The mod removes pause from most of the gameplay mechanics.
+That prevents looting chests, inventory management and such in dangerous areas. Which may contribute to a more hardcore experience.
+
+#### Installation
+
+[code/download](https://gist.github.com/vinevi/b9dc8d03d2d33d840c346ec830fb6c48)
+
+1. Install [MMExtension](https://github.com/GrayFace/MMExtension)
+2. Download the [script](https://gist.github.com/vinevi/b9dc8d03d2d33d840c346ec830fb6c48) and place it in the ```/scripts/general``` directory
+
+#### Pause removed from:
+
+* Character screen
+* Chest screen
+* Cast screen and cast target select. The party is also allowed to move while selecting the target
+* Tooltip (right-click)
+* Map transition screen (dungeons and outdoor areas)
+* Autonotes
+* House screen
+* NPC conversation screens
+* Rest screen
+
+**! Turnbased mode is disabled**
+
+**! Game completion untested**
+
+One of the new features is that the game will keep rendering on map transition and NPC conversation screens.
+
+Since the mod introduced a lot new contexts for party to die in the game did not really expect them by default. That includes:
+dying with cast screen on, dying with options screen on and such. That often led to UI issues. I tried to prevent those by removing those
+screens on death so hopefully it is resolved now. There may be however some contexts that can lead to crashes still.
+
