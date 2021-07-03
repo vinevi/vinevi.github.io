@@ -1,0 +1,39 @@
+## Introduction
+
+DosBox-X is an evolving branch of DosBox. One of its features is ease of installation and configuration of Windows 9x systems and their applications. It became efficient enough to smoothly run games made for these operating systems. And so I decided to try if it can run well Might & Magic VI and the later games.
+
+## Why emulate Might & Magic games
+
+Might & Magic games were made for the hardware which has the architecture that is quite different from what is common today. Attempting to run it on newer processor will introduce lots of inacuracies in the game's logic. There are some differences which can be seen right away:
+
+* the NPCs walk in-place
+* the party moves sideways when facing certain angles
+* sound hitching
+
+Another special case is that some of the game's mechanics are tied to the framerate. It was not visible during development but when running the game on 100x faster hardware than intended the effect is quite visible. The examples are: flying up or down and snow effect. Both are extremely fast on newer hardware.
+
+These are only the differences which are visual. The same may be applied for AI or random number generation.
+
+### Why emulation and not virtualization like VMWare or VirtualBox?
+
+The problem with virtualization in that case is that it does not emulate the hardware. Virtualization does allow to install the system on your hardware, limit it to some extent and hope for the best. It has no guarantee that anything will work at all and will probably end up being a very unstable experience when it comes to running systems that old. Virtualization is mostly useful for running systems which are compatible with the hardware they are virtualized on.
+
+So it may allow to run Windows 95 but will probably end up being a worse exprience than trying to run it on the latest Windows system.
+
+### Why not just patch the game?
+
+Patching works well but only to certain extent. It is not really easy to find and patch the issues which are not visual. Fixing a problem may introduce a new one. So in that case you can never really guarantee that everything works as intended. The main problem is that at some point the hardware will not be able to run it at all leaving only rewrites or emulation as a solution.
+
+## Let's begin!
+
+So the motivation is clear. Now let's examine the requirements:
+
+> * Pentium 90+(Pentium 166+ recommended)
+> * 16 MB RAM(32 MB recommended)
+> * Direct X compatible SVGA Video Card
+
+As you can see the system requirements are quite humble although Pentium 166+ is quite a lot.
+DosBox-X can emulate the CPUs up to Pentium Pro. Its max frequency is 200MHz. One of the reasons it does not go higher than that is that emulation is a really demanding process.
+[It will take a quite fast CPU to emulate at Pentium Pro speeds and higher.](https://github.com/joncampbell123/dosbox-x/issues/2435#issuecomment-816976500).
+
+I was testing the games with the following hardware: AMD Ryzen™ 3 3200U (2 core APU with 2.6GHz clock). That is not enough to emulate Pentium Pro but should probably be enough to reach Pentium 90 speeds.
