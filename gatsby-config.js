@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
 	siteTitle: `AlpacaNox`,
     siteTitleAlt: `AlpacaNox`,
+	siteImage: null,
   },
   plugins: [
     {
