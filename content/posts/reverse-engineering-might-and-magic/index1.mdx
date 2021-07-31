@@ -1,0 +1,22 @@
+---
+title: "Reverse engineering Might & Magic VI"
+date: 2021-07-17
+slug: "/reverse-engineering-might-and-magic"
+tags:
+  - Might & Magic
+  - Reverse engineering
+---
+
+Reverse engineering allows you to explore and modify the game mechanics in any way. In Might & Magic most of the game code is contained within MM6.exe. If you were to open that file with a text or hex editor it won't probably tell you a lot. That is what the tools for reverse engineering are for - to help make sense of binary code. And you might think that these tools are really complex, take a lot of time to learn or need a huge background in programming. None of that is true, the tools are fairly simple, due to simplicity of the task. Reverse engineering is not really about the programming, it is about analyzing the code and making notes, that is all. Reverse engineering tools are just text editors with some extra that allows to analyze things. 
+
+
+
+. It was very confusing when I was starting to get into it but now it feels really simple. I wanted to make an article to help others overcome that early barrier. Reverse engineering of videogames can be as difficult as you want it to be. There is absolutely no need for lots of background experience in programming since it is not about writing the code but about analyzing it.
+
+To begin create a new Ghidra project and import MM6.exe into it. There is no need to change any settings during the import. After the executable was imported double click on it - that will open it with the code browser tool.
+
+Before starting to do anything Ghidra will need some time to analyze the executable. To simplify: analyzing will make a draft version of the source code. The progress of analyzing can be tracked in the bottom right corner. It is better to allow Ghidra to complete the analysis prior to exploring the code. When the analysis is finished the Auto Analysis Summary dialog box will be displayed.
+
+
+
+
